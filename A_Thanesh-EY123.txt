@@ -1,0 +1,163 @@
+echo "# EY-B4" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Thaneshwara848/EY-B4.git
+git push -u origin main
+
+
+
+
+				Download and Install the software 
+							15 minuts of time to complet 
+
+1) JDK : 17 version is preferd 					: Installed 
+		if 20 version also fine 
+2) Eclips Entriprise version : 					: Installed 
+	or Eclips j2ee 
+3) Mysql : 							: downlaod but dont install it 
+	either version 5 or 8 
+4) STS : spring tool Suits : 					:downlaod but dont install it
+	
+5) Postman tool : 						: downlaod but dont install it
+	
+6) NOde js 16 : is prefer 					:downlaod but dont install it
+	if 18 + also okay 
+
+7) VS code 							:downlaod but dont install it
+
+
+
+Links : 
+	JDK : https://download.oracle.com/java/17/archive/jdk-17.0.8_windows-x64_bin.exe
+
+	Eclips : https://www.eclipse.org/downloads/packages/release/2022-06/r
+
+	Mysql : https://dev.mysql.com/downloads/installer/
+	
+	STS : https://spring.io/tools
+
+	post man : https://www.postman.com/downloads/
+
+	Node JS  : https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi
+	
+	VS code : https://code.visualstudio.com/download
+	
+				
+Basics
+
+	Data types 				find the size of each data type  , 	
+			byte 
+			short
+			int 
+			floate 
+			double 
+			char 
+			boolean 
+			long 
+			String 
+
+	Operators : 
+		unirary 	
+			a;
+				a++,a--,--a,++a;
+		binary 
+			a
+			b
+				a<b,a>b,a==b,a<=b,a>=b: condational
+				a==10 && b==20 , || ! : logical operaotrs 
+				a=10;assignmanet operaots 
+				
+		tarnary 
+				(a<=b):a?b;	
+
+statemets: 
+		if, if else, if else ladder, nested if , sitch 
+looping : 	for , while , do while
+jumping : 	break , return , conitnue	
+
+						5 -10 minuts of time 	
+
+
+
+
+
+
+
+Quickly revise yestrday topics 
+		will start at 9 : 40 
+
+
+
+
+
+
+
+
+Quickly Revise All the topics ....!
+
+
+
+Class 							Abstarct Class 							Interface 
+
+1) class A{}						abstarct class B{}						intyerface I{}
+
+2) Constructor ? yes 					yes 								NO 
+
+3)int x;						int x ;								we must int x=0;
+
+4) we can create a obj 					not 								not 
+
+5)0 % abstraction 					0-100%								100% abstraction
+
+6)muiltyple inherityance not posible 			not posible 							Its is possible
+
+
+
+
+
+		What is exception ?
+		how many ways to handle it ?
+		difference between checked and unched exception
+		what is try and catch 
+		diffference between throw and throws 
+		difference final and finally 
+		list 5 name of check exception 
+		list 5 name of unchecked exception 
+		Steps to create a Coustum exception 
+		what is throwable 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
