@@ -1,0 +1,18 @@
+
+<div style="text-align: center;">
+    <form [formGroup]="student">
+        <h3>
+        
+    First name :<input type="text" formControlName="firstname"><br>
+    Last Name : <input type="text"formControlName="lastname"><br>
+    USer Age : <input type="text" formControlName="userage"><br>
+    Email  : <input type="email" formControlName="Email"><br>
+    
+           <br> 
+<input type="submit" value="Register" [disabled]="student.invalid">
+                <input type="reset" value="Reset"  ><br>
+    
+           
+        </h3>
+    </form>
+</div>

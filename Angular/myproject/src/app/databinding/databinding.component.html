@@ -1,0 +1,26 @@
+<input type="submit" (click)="abc()">
+<br>
+
+<input type="submit" (click)="atoz()" value="PRINT on CONSOLE">
+<br>
+
+<input type="text" #uname>
+<input type="submit" value="SEND" (click)="xyz(uname.value)">
+
+<br><hr>
+
+First :<input type="text" #fn><br>
+Last :<input type="text" #ln> <br>
+Fullname :<input type="text" value={{myname}}> <br>
+<input type="submit" (click)="fullname(fn.value,ln.value)">
+
+<h1>Hi My Full name is :{{myname}}</h1>
+
+<img [src]="myimage" [alt]="solution">
+
+<input type="submit" value="CLICK" [disabled]="aaaa">
+<hr>
+
+
+
+

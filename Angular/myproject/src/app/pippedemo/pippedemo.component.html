@@ -1,0 +1,53 @@
+<div style="text-align: center;">
+    {{content}}<br>
+    {{content | uppercase}}<br>
+    {{content | lowercase}}<br>
+    {{content | titlecase}}<br>
+
+    <hr>
+    {{amount}}<br>
+    {{amount | currency}}<br>
+    {{amount | currency:'INR'}}<br>
+    {{amount | currency:'JPY'}}<br>
+    {{amount | currency:'EUR'}}<br>
+     {{amount | currency:'USD'}}<br>
+     <hr>
+     {{d}}<br>
+     {{d|date}}<br>
+     {{d|date:'MM-dd-YYYY'}}<br>
+     {{d|date:'dd-MM-YYYY'}}<br>
+     {{d|date:'dd-MM-YY'}}<br>
+     {{d|date:'dd-MM-YYYY HH-mm-ss'}}<br>
+    <hr>
+    {{obj}}<br>
+    {{obj |json}}
+    <hr>
+    <ul *ngFor="let employees of emps">
+        <li>{{employees.id}}---{{employees.name|uppercase}}---{{employees.age}}</li>
+    </ul>
+
+    {{5 | sqr }}<br>
+    {{10 | sqr }}<br>
+    {{100 | sqr }} <bR>
+
+    {{5 |cube }}<br>
+    {{10 |cube }}<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

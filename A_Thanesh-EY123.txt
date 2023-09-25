@@ -1,6 +1,6 @@
 echo "# EY-B4" >> README.md
 git init
-git add README.md
+git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Thaneshwara848/EY-B4.git
@@ -131,6 +131,640 @@ Class 							Abstarct Class 							Interface
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Answer the below Question....!
+
+JDBC 
+
+1 ) Describ the JDBC Steps 
+
+2 ) Types pf statements 	
+	statemets 
+	Prepared Statanent 
+	batch 
+	Collabel : this not requries , bcz it wil comes undrer PL/SQL : will see later 
+	
+3 ) List the driver name : 
+	MYSQL :
+	oracle :
+	sqlServr:
+
+4 ) Types of Driver 
+	Type 1
+	type 2 
+	type 3 
+	type 4 :thin
+5 ) Difference b/w 
+	execute 
+	executeUpdate
+	ExecuetQuery 
+
+6 ) What is class.for name
+7 ) what is DriverManager 
+8 )What is ResultSet 
+9 ) What is Result SetMeta Data  
+
+
+Creat Acc
+ID , name , age , dob, pan,addar,phone,Branch, Location,IFSCcode, Initbal		
+
+
+
+What is servelt ? Server side coding lang which is used to creata web application 
+
+httpServletRequest 
+httpServletRespomce 
+
+
+RequrstDispatcter 
+	forward 
+	include 
+
+Doget/ DoPost method 
+
+Sevlet config / context 
+
+life cycle of servelt 
+
+JSP 
+Session mamagmaet 
+	cookis 
+	session 
+
+		
+		Java 
+				JDK,JRE ,JVM
+
+j2SE 		j2EE 			j2ME 
+
+awt		html,css,js		mobile edation
+		servlet.jsp
+Swing
+jdbc		jdbc
+db		db
+
+
+
+jdbc 
+Servlet 
+
+JSP : 
+		java Server page 
+		Server side coding lang which is used to creata web application 
+
+
+Servlet . jsp 
+
+		
+
+
+
+
+
+
+CORE JAVA  , WITH j2EE (JAVA 2 Entripreci Edation )
+
+	BASCIS 
+	OOPS 
+	STRINGS 
+	EXCEPTION HANDLING 
+	MULTITHREADING 
+	ARRAYS 
+	COLLECTION S
+	JDBC 
+	sERVLET 
+	JSP 
+
+	SQL : 
+		data types: 
+			int / number 
+			varchar 
+			char 
+			date 
+			boolean 		
+		Constrinets : 
+			primary key 
+			unique 
+			not null 
+			check 
+			default 
+			forign key
+		opertotr: 
+			distinct , like , order by , and , or , not , not null , between , group by, having , in , etc...!
+		Types of SQL commands : 
+			DDL : Data Definmation Lang  
+				Dr Cat
+				Drop, Rename , Create , Alter ,  truncate 
+			DML : data manupulation lang 
+				UID 
+				Update , Insert , Delete 
+			DRL  : data retrival lanmg 
+				Select 
+			DCL  : data control lang
+				Grant , Revoke  
+			TCL : transation contorl lang
+				commit , rollback , save point	 
+		Join : 
+			full join 
+			inner join 
+			left join 
+			right join 
+		
+		users 
+
+
+
+		views
+		sequences 
+
+
+
+
+
+
+
+
+
+
+
+
+
+create table employee
+(
+	id number,
+	name varchar(10),
+	Age number(3),
+	Salary number(10),
+	Desig varchar(10),
+	PAN varchar(10)
+);
+
+insert into employee values(100,'Thanesh',25,50000,'Developer','ABC123');
+
+
+Constrinets : 
+			primary key 
+			unique 
+			not null 
+			check 
+			default 
+			forign key
+
+
+pK 			Uniquee
+
+
+no dup +not null 	no dup + can be null 
+only once we can use	we can use muiltple uniquee in a table 
+
+
+create table employee
+(
+	id number primary key,
+	name varchar(10) not null,
+	Age number(3) check (age > 18 ),
+	Salary number(10) check(salary > 25000),
+	Desig varchar(10) default 'GET',
+	PAN varchar(10) unique,
+	phone number(10) unique
+);
+
+
+
+
+
+
+
+
+Types of SQL commands : 
+			DDL : Data Definmation Lang  
+				Dr Cat
+				Drop, Rename , Create , Alter ,  truncate 
+			DML : data manupulation lang 
+				UID 
+				Update , Insert , Delete 
+			DRL  : data retrival lanmg 
+				Select 
+			DCL  : data control lang
+				Grant , Revoke  
+			TCL : transation contorl lang
+				commit , rollback , save point	 
+
+
+
+
+
+
+
+
+
+
+SQL> create user modi ;
+create user modi
+                *
+ERROR at line 1:
+ORA-01938: IDENTIFIED BY must be specified for CREATE USER
+
+
+SQL> create user modi IDENTIFIED tiger;
+create user modi IDENTIFIED tiger
+                            *
+ERROR at line 1:
+ORA-00924: missing BY keyword
+
+
+SQL> create user modi IDENTIFIED by  tiger;
+
+User created.
+
+SQL> connect modi/tiger;
+ERROR:
+ORA-01045: user MODI lacks CREATE SESSION privilege; logon denied
+
+
+Warning: You are no longer connected to ORACLE.
+SQL> connect system/tiger;
+Connected.
+SQL> grant CREATE SESSION to modi;
+
+Grant succeeded.
+
+SQL> connect modi/tiger;
+Connected.
+SQL> select * from employee;
+select * from employee
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> select * from system.employee;
+select * from system.employee
+                     *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> connect system/tiger;\
+ERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+Warning: You are no longer connected to ORACLE.
+SQL> connect system/tiger;
+Connected.
+SQL> grant select to modi on employee;
+grant select to modi on employee
+             *
+ERROR at line 1:
+ORA-00969: missing ON keyword
+
+
+SQL> grant select employee to modi ;
+grant select employee to modi
+      *
+ERROR at line 1:
+ORA-00990: missing or invalid privilege
+
+
+SQL> grant select on  employee to modi ;
+
+Grant succeeded.
+
+SQL> connect modi/tiger;
+Connected.
+SQL> select * from system.employee;
+
+        ID NAME              AGE     SALARY DESIG      PAN             PHONE
+---------- ---------- ---------- ---------- ---------- ---------- ----------
+       100 Thanesh            25     250000 Developer  ABC123         987654
+       200 Thanesh            25     250000 Developer  ABC456          98743
+       300 Thanesh            25     250000 Developer  ABC789          54253
+       500 Thanesh            25     250000 Developer                 542453
+       700 Thanesh            19      25001 Developer  BB534          546543
+       800 ABi                19      25001 Developer  CC534          546643
+       777 Thanesh            19      25001            DD534          546666
+       888 ABi                19      25001 GET        EE534          999643
+       989 Charan             19      25001 CEO        FF534           88888
+       950 Modi               19      25001 Manager    HH534           77777
+
+10 rows selected.
+
+SQL> delete from system.employee where id=777;
+delete from system.employee where id=777
+                   *
+ERROR at line 1:
+ORA-01031: insufficient privileges
+
+
+SQL> connect system/tiger;
+Connected.
+SQL> grant select,delete on  employee to modi ;
+
+Grant succeeded.
+
+SQL> connect modi/tiger;
+Connected.
+SQL> select * from system.employee;
+
+        ID NAME              AGE     SALARY DESIG      PAN             PHONE
+---------- ---------- ---------- ---------- ---------- ---------- ----------
+       100 Thanesh            25     250000 Developer  ABC123         987654
+       200 Thanesh            25     250000 Developer  ABC456          98743
+       300 Thanesh            25     250000 Developer  ABC789          54253
+       500 Thanesh            25     250000 Developer                 542453
+       700 Thanesh            19      25001 Developer  BB534          546543
+       800 ABi                19      25001 Developer  CC534          546643
+       777 Thanesh            19      25001            DD534          546666
+       888 ABi                19      25001 GET        EE534          999643
+       989 Charan             19      25001 CEO        FF534           88888
+       950 Modi               19      25001 Manager    HH534           77777
+
+10 rows selected.
+
+SQL> delete from system.employee where id=777;
+
+1 row deleted.
+
+SQL> update system.employee set= salary=50000 where if=888;
+update system.employee set= salary=50000 where if=888
+                          *
+ERROR at line 1:
+ORA-01747: invalid user.table.column, table.column, or column specification
+
+
+SQL> update system.employee set salary=50000 where if=888;
+update system.employee set salary=50000 where if=888
+                                              *
+ERROR at line 1:
+ORA-00904: "IF": invalid identifier
+
+
+SQL> update system.employee set salary=50000 where id=888;
+update system.employee set salary=50000 where id=888
+              *
+ERROR at line 1:
+ORA-01031: insufficient privileges
+
+
+SQL> connect system/tiger;
+Connected.
+SQL> grant upadte on  employee to modi ;
+grant upadte on  employee to modi
+      *
+ERROR at line 1:
+ORA-00990: missing or invalid privilege
+
+
+SQL> grant update on  employee to modi ;
+
+Grant succeeded.
+
+SQL> connect modi/tiger;
+Connected.
+SQL> select * from system.employee;
+
+        ID NAME              AGE     SALARY DESIG      PAN             PHONE
+---------- ---------- ---------- ---------- ---------- ---------- ----------
+       100 Thanesh            25     250000 Developer  ABC123         987654
+       200 Thanesh            25     250000 Developer  ABC456          98743
+       300 Thanesh            25     250000 Developer  ABC789          54253
+       500 Thanesh            25     250000 Developer                 542453
+       700 Thanesh            19      25001 Developer  BB534          546543
+       800 ABi                19      25001 Developer  CC534          546643
+       888 ABi                19      25001 GET        EE534          999643
+       989 Charan             19      25001 CEO        FF534           88888
+       950 Modi               19      25001 Manager    HH534           77777
+
+9 rows selected.
+
+SQL> delete from system.employee where id=100;
+
+1 row deleted.
+
+SQL> update system.employee set salary=50000 where id=888;
+
+1 row updated.
+
+SQL> select * from system.employee;
+
+        ID NAME              AGE     SALARY DESIG      PAN             PHONE
+---------- ---------- ---------- ---------- ---------- ---------- ----------
+       200 Thanesh            25     250000 Developer  ABC456          98743
+       300 Thanesh            25     250000 Developer  ABC789          54253
+       500 Thanesh            25     250000 Developer                 542453
+       700 Thanesh            19      25001 Developer  BB534          546543
+       800 ABi                19      25001 Developer  CC534          546643
+       888 ABi                19      50000 GET        EE534          999643
+       989 Charan             19      25001 CEO        FF534           88888
+       950 Modi               19      25001 Manager    HH534           77777
+
+8 rows selected.
+
+SQL> alter table system.employee drop(Phone);
+alter table system.employee drop(Phone)
+*
+ERROR at line 1:
+ORA-01031: insufficient privileges
+
+
+SQL> insert into system.employee values(456,'ABC',45,45000,'CLERK','HYG123',2342412)
+  2  ;
+insert into system.employee values(456,'ABC',45,45000,'CLERK','HYG123',2342412)
+                   *
+ERROR at line 1:
+ORA-01031: insufficient privileges
+
+
+SQL> connect system/tiger;
+Connected.
+SQL> grant all privileges to modi ;
+
+Grant succeeded.
+
+SQL> connect modi/tiger;
+Connected.
+SQL> select * from system.employee;
+
+        ID NAME              AGE     SALARY DESIG      PAN             PHONE
+---------- ---------- ---------- ---------- ---------- ---------- ----------
+       200 Thanesh            25     250000 Developer  ABC456          98743
+       300 Thanesh            25     250000 Developer  ABC789          54253
+       500 Thanesh            25     250000 Developer                 542453
+       700 Thanesh            19      25001 Developer  BB534          546543
+       800 ABi                19      25001 Developer  CC534          546643
+       888 ABi                19      50000 GET        EE534          999643
+       989 Charan             19      25001 CEO        FF534           88888
+       950 Modi               19      25001 Manager    HH534           77777
+
+8 rows selected.
+
+SQL> delete from system.employee where id=200;
+
+1 row deleted.
+
+SQL> update system.employee set salary=50000 where id=989;
+
+1 row updated.
+
+SQL> alter table system.employee drop(Phone);
+
+Table altered.
+
+SQL> insert into system.employee values(456,'ABC',45,45000,'CLERK','HYG123')
+  2  ;
+
+1 row created.
+
+SQL> connect system/tiger;
+Connected.
+SQL> revoke  all privileges from modi ;
+
+Revoke succeeded.
+
+SQL> connect modi/tiger;
+ERROR:
+ORA-01045: user MODI lacks CREATE SESSION privilege; logon denied
+
+
+Warning: You are no longer connected to ORACLE.
+SQL> connect modi/tiger;
+
+
+=============================
+TCL : transation contorl lang
+				commit , rollback , save point	 
+
+
+
+Java + SQL
+
+Angular 
+
+
+	Servlet /jsp 
+		
+	html 
+	css 
+
+	Angaulr 
+
+		component
+			4 files 
+				home.component.html
+				home.compoennt.css
+				home.component.spec.ts: testing 
+				home.compoentn.ts : login : typescript  
+
+
+
+	ANgualr : 
+			COmponent
+					ng g c comp_name 
+						set of 4 files html , css, spec, ts  
+			Routing 
+					nav 1 to other page 
+					href=== routerLink
+					<router-outlet>
+					configurew in routing ts file 
+						** : wildcard routing 
+			Data Binding 
+					2 way 
+						one way data binding
+							event binding () 
+							proprty binding  []
+							interpolation {{}}
+						2 way data binding 
+							[()]
+			Directive 
+					structural directive
+						*ngIf
+						*nfFor 
+						*ngSwitch 
+					Attrabute Directive
+						*ngClass
+
+			pipe 
+					it is use to transfor the data to the requried format 
+					inbild pipe 
+						string number date json 
+					coustum pipe 
+						ng g pipe cube 
+		
+			Forms :
+					2 type of forms 
+						1 ) templet drivenm from 
+								validation will done in html page 
+						2) reactive driven from 
+								validation will done in ts file 
+			life cycle 
+					oninit 
+						doCheck
+					ondestroy 
+			Services :
+					
+			
+	 
+			
 
 
 

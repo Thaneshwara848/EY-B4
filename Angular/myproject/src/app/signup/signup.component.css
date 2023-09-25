@@ -1,0 +1,11 @@
+.abc{
+    text-align: center;
+    border: 5px solid red ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.xyz{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+}

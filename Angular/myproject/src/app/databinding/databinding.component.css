@@ -1,0 +1,18 @@
+/* custom style */
+div{
+    background:#eee;
+    width:70px;
+    text-align:center;
+    
+  }
+  .cart-counter{
+    display:inline-block;
+    width:20px;
+    opacity:0;
+    height:20px;
+    background:#ddd;
+    text-align:center;
+    border-radius:0%;
+    margin-left:10px;
+    
+  }

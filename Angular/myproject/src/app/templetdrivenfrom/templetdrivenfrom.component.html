@@ -1,0 +1,23 @@
+<hr>
+<div style="text-align: center;">
+    <h1>Hi Please Fill the Details ....!</h1>
+    <form #userForm="ngForm" (ngSubmit)="userLoginInformation(userForm.value)">
+        <div >
+            <label>User Name  <span style="color: red;" *ngIf="uname.invalid">*</span>:</label>
+            <input type="text" name="uname"  #uname="ngModel" ngModel required><br>
+<span style="color: red;" *ngIf="uname.invalid && uname.touched">Please fill correct data</span>
+        </div>
+
+        <div >
+            <label>User PASS <span style="color: red;" *ngIf="upass.invalid">*</span>:</label>
+            <input type="text" name="upass"  #upass="ngModel" ngModel required><br>
+<span style="color: red;" *ngIf="upass.invalid && upass.touched">Please fill correct data</span>
+        </div>
+        <div>
+            <br>
+            <input type="submit" value="LOGIN" >
+            <input type="reset" value="RESET" >
+            
+        </div>
+    </form>
+</div>
